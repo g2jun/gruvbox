@@ -412,7 +412,11 @@ function! s:HL(group, fg, ...)
 
   " special
   if a:0 >= 3
-    call add(histring, 'guisp=' . a:3[0])
+    if g:gruvbox_guisp_fallback == 'NONE'
+      call add(histring, 'guisp=' . a:3[0])
+    else
+      call add(histring, 'guisp=' . 'NONE')
+    endif
   endif
 
   execute join(histring, ' ')
