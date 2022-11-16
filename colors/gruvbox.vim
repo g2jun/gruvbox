@@ -480,9 +480,11 @@ endif
 
 if version >= 700
   " Screen line that the cursor is
-  call s:HL('CursorLine',   s:none, s:bg1)
+  " call s:HL('CursorLine', s:none, s:bg1)
+  call s:HL('CursorLine', s:none, s:none, s:underline)
   " Screen column that the cursor is
-  hi! link CursorColumn CursorLine
+  " hi! link CursorColumn CursorLine
+  call s:HL('CursorColumn', s:none, s:bg1)
 
   " Tab pages line filler
   call s:HL('TabLineFill', s:bg4, s:bg1, s:invert_tabline)
@@ -503,7 +505,8 @@ if version >= 703
   call s:HL('Conceal', s:blue, s:none)
 
   " Line number of CursorLine
-  call s:HL('CursorLineNr', s:yellow, s:bg1)
+  " call s:HL('CursorLineNr', s:yellow, s:bg1)
+  call s:HL('CursorLineNr', s:yellow, s:none, s:bold)
 endif
 
 " hi! link NonText GruvboxBg2
