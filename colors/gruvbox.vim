@@ -510,7 +510,7 @@ if version >= 703
 endif
 
 " hi! link NonText GruvboxBg2
-hi! link NonText Special
+hi! link NonText GruvboxGray
 " hi! link SpecialKey GruvboxBg2
 hi! link SpecialKey Special
 
