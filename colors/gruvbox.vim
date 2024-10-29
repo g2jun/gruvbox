@@ -1357,8 +1357,10 @@ hi! link markdownCodeBlock GruvboxAqua
 hi! link markdownCodeDelimiter GruvboxAqua
 
 hi! link markdownBlockquote GruvboxGray
-hi! link markdownListMarker GruvboxGray
-hi! link markdownOrderedListMarker GruvboxGray
+" hi! link markdownListMarker GruvboxGray
+hi! link markdownListMarker GruvboxYellow
+" hi! link markdownOrderedListMarker GruvboxGray
+hi! link markdownOrderedListMarker GruvboxYellow
 hi! link markdownRule GruvboxGray
 hi! link markdownHeadingRule GruvboxGray
 
