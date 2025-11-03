@@ -9,10 +9,14 @@
 " Supporting code -------------------------------------------------------------
 " Initialisation: {{{
 
-if version > 580
-  hi clear
-  if exists("syntax_on")
-    syntax reset
+if has('nvim')
+  source $VIMRUNTIME/colors/vim.lua " Nvim: revert to Vim default color scheme
+else
+  if version > 580
+    hi clear
+    if exists("syntax_on")
+      syntax reset
+    endif
   endif
 endif
 
