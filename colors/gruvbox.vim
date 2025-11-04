@@ -530,9 +530,6 @@ call s:HL('Underlined', s:blue, s:none, s:underline)
 call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
 call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 
-" User highlight groups in statusline
-hi! link User1 StatusLineTermNC
-
 " The column separating vertically split windows
 call s:HL('VertSplit', s:bg3, s:vert_split)
 
